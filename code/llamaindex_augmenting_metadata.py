@@ -24,7 +24,7 @@ os.environ['SECURE_GPT_KEY']= getpass.getpass('Enter your Secure GPT API Key:')
 #TO DO:
 #Import the secure gpt connections and models
 #Acesss a model from secure gpt
-llm_transformation= None
+llm_transformation= None #Add the secure gpt model here
 text_splitter= SentenceSplitter(separator=" ", chunk_size=1024, chunk_overlap=128)
 title_Extractor= TitleExtractor(llm=llm_transformation, nodes=5)
 Keyword_extractor= KeywordExtractor(llm=llm_transformation, keywords=5)
