@@ -8,7 +8,7 @@ def load_documents(dir:str):
     return docs
 
 #Updated loading function
-def load_documents(dir:str,text_template:str,excluded_embed_keys:list, excluded_llm_keys:list):
+def load_documents_updated(dir:str,text_template:str,excluded_embed_keys:list, excluded_llm_keys:list):
     docs=SimpleDirectoryReader(input_dir=dir).load_data()
     for doc in docs:
         doc.text_template= text_template

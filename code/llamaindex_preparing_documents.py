@@ -1,10 +1,10 @@
 #Import the function to load the documents
-from functions import load_documents
+from functions import load_documents as load_data
 #import MetadataMode to edit the metadata that is passed to the embedings and the LLM model
 from llama_index.core.schema import MetadataMode
 
 #Load the documents
-docs= load_documents("./Data")
+docs= load_data("./Data")
 #confirm its been loaded properly
 
 
